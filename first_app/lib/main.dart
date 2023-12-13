@@ -13,10 +13,16 @@ void main() {
             )
           ),
           child: const Center(
-            child: Text('hello world!'),
+            child: Text('hello world!', 
+            style: TextStyle(color: Colors.white,
+            fontSize: 28),
+            
+            ),
           ),
         ),
       ),
     ),
   );
 }
+
+class
