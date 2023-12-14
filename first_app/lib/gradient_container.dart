@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:first_app/styled_text.dart';
 
 class GradinetContainer extends StatelessWidget{
 
@@ -15,12 +15,15 @@ class GradinetContainer extends StatelessWidget{
             )
           ),
           child: const Center(
-            child: Text('I am AHMED', 
-            style: TextStyle(color: Colors.white,
-            fontSize: 48),
-            
-            ),
+            child: StyledText()
           ),
+          
         );
   }
 }
+
+// Text('I am AHMED', 
+//             style: TextStyle(color: Colors.white,
+//             fontSize: 48),
+            
+//             ),
