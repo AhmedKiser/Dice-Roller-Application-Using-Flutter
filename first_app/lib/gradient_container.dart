@@ -15,15 +15,9 @@ class GradinetContainer extends StatelessWidget{
             )
           ),
           child: const Center(
-            child: StyledText()
+            child: StyledText(),
           ),
           
         );
   }
 }
-
-// Text('I am AHMED', 
-//             style: TextStyle(color: Colors.white,
-//             fontSize: 48),
-            
-//             ),
