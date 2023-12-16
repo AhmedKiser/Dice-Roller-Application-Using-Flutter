@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:first_app/styled_text.dart';
 
-var startAlignment = Alignment.topLeft;
-final endAlignment = Alignment.bottomRight;
+const startAlignment = Alignment.topLeft;
+const endAlignment = Alignment.bottomRight;
 class GradinetContainer extends StatelessWidget{
 
   const GradinetContainer({super.key});
@@ -12,9 +12,9 @@ class GradinetContainer extends StatelessWidget{
   Widget build(context) {
     
     return Container(
-          decoration:  BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors:const [Colors.deepPurple,Colors.lightBlue],
+              colors: [Colors.deepPurple,Colors.lightBlue],
               begin: startAlignment,
               end: endAlignment
             )
@@ -26,3 +26,5 @@ class GradinetContainer extends StatelessWidget{
         );
   }
 }
+
+//video number 30
