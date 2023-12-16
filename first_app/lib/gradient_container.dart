@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:first_app/styled_text.dart';
 
 var startAlignment = Alignment.topLeft;
+final endAlignment = Alignment.bottomRight;
 class GradinetContainer extends StatelessWidget{
 
   const GradinetContainer({super.key});
@@ -15,7 +16,7 @@ class GradinetContainer extends StatelessWidget{
             gradient: LinearGradient(
               colors:const [Colors.deepPurple,Colors.lightBlue],
               begin: startAlignment,
-              end: Alignment.bottomRight
+              end: endAlignment
             )
           ),
           child: const Center(
