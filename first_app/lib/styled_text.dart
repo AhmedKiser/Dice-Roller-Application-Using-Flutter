@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 const displayName = "I am ahmed";
 class StyledText extends StatelessWidget{
-  const StyledText({super.key});
+  const StyledText(this.text,{super.key});
+
+  final String text;
   @override
   Widget build(context){
-    return const Text(displayName , 
-        style: TextStyle(color: Colors.white,
+    return Text(text , 
+        style: const TextStyle(color: Colors.white,
         fontSize: 48),
     );
   }
