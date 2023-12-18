@@ -5,8 +5,10 @@ void main() {
   runApp(
     const MaterialApp(
       home: Scaffold(     
-        body: GradinetContainer([Color.fromARGB(255, 212, 199, 17),Color.fromARGB(255, 14, 209, 14)]),
+        body: GradinetContainer([Color.fromARGB(255, 212, 17, 212),Color.fromARGB(255, 14, 82, 209)]),
       ),
     ),
   );
 }
+
+//video 32 end
