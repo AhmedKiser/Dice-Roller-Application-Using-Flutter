@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:first_app/styled_text.dart';
+// import 'package:first_app/styled_text.dart';
 
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 class GradinetContainer extends StatelessWidget{
 
   const GradinetContainer(this.colors, {super.key});
+
+  // const GradinetContainer.purple({super.key})
+  // : color1 = Colors.deepPurple, 
+  //   color2 = Colors.indigo ;
   
   // final Color right, left;
   final List<Color> colors;
@@ -21,8 +25,8 @@ class GradinetContainer extends StatelessWidget{
               end: endAlignment
             )
           ),
-          child: const Center(
-            child: StyledText('Hello world'),
+          child:  Center(
+            child: Image.asset('assets/images/dice-2.png'),
           ),
           
         );
