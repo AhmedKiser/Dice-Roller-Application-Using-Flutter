@@ -14,6 +14,9 @@ class GradinetContainer extends StatelessWidget{
   // final Color right, left;
   final List<Color> colors;
 
+  void rollDice() {
+
+  }
   @override
   Widget build(context) {
     
@@ -26,10 +29,11 @@ class GradinetContainer extends StatelessWidget{
             )
           ),
           child: Center(
-            child: Column(children: [Image.asset('assets/images/dice-2.png',width: 200,)
+            child: Column(children: [Image.asset('assets/images/dice-2.png',width: 200,),
             // ElevatedButton(onPressed: onPressed, child: child)
             // OutlinedButton(onPressed: onPressed, child: child)
-            // TextButton(onPressed: onPressed, child: child)
+            TextButton(onPressed: rollDice,
+             child: const Text("roll Dice"))
             ],) ,
           ),
           
