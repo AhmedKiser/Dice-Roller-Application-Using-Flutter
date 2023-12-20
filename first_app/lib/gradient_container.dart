@@ -25,8 +25,12 @@ class GradinetContainer extends StatelessWidget{
               end: endAlignment
             )
           ),
-          child:  Center(
-            child: Image.asset('assets/images/dice-2.png',width: 200,),
+          child: Center(
+            child: Column(children: [Image.asset('assets/images/dice-2.png',width: 200,)
+            // ElevatedButton(onPressed: onPressed, child: child)
+            // OutlinedButton(onPressed: onPressed, child: child)
+            // TextButton(onPressed: onPressed, child: child)
+            ],) ,
           ),
           
         );
