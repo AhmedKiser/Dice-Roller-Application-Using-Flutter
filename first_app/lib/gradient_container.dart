@@ -29,11 +29,16 @@ class GradinetContainer extends StatelessWidget{
             )
           ),
           child: Center(
-            child: Column(children: [Image.asset('assets/images/dice-2.png',width: 200,),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [Image.asset('assets/images/dice-2.png',width: 200,),
             // ElevatedButton(onPressed: onPressed, child: child)
             // OutlinedButton(onPressed: onPressed, child: child)
             TextButton(onPressed: rollDice,
-             child: const Text("roll Dice"))
+            style: TextButton.styleFrom(
+              padding: const EdgeInsets.only(top: 30),
+              foregroundColor: Colors.white, textStyle: const TextStyle(fontSize: 28) ),
+             child: const Text("Roll Dice"))
             ],) ,
           ),
           
