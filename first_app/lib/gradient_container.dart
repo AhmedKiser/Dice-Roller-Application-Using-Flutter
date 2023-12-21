@@ -5,17 +5,21 @@ const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 class GradinetContainer extends StatelessWidget{
 
-  const GradinetContainer(this.colors, {super.key});
+  GradinetContainer(this.colors, {super.key});
 
-  // const GradinetContainer.purple({super.key})
+  // GradinetContainer.purple({super.key})
   // : color1 = Colors.deepPurple, 
   //   color2 = Colors.indigo ;
   
   // final Color right, left;
   final List<Color> colors;
+  // final Color color1;
+  // final Color color2;
+  var activeDiceImage = 'assets/images/dice-2.png';
 
   void rollDice() {
-
+    activeDiceImage = 'assets/images/dice-4.png';
+    print('changing image');
   }
   @override
   Widget build(context) {
@@ -31,7 +35,7 @@ class GradinetContainer extends StatelessWidget{
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [Image.asset('assets/images/dice-2.png',width: 200,),
+              children: [Image.asset(activeDiceImage ,width: 200,),
             // ElevatedButton(onPressed: onPressed, child: child)
             // OutlinedButton(onPressed: onPressed, child: child)
             TextButton(onPressed: rollDice,
